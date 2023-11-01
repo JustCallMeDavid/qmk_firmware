@@ -1,0 +1,15 @@
+
+
+NOTE: for both commands below use the `-km via` option (`-km default` will cause VIA not to work and
+`-km keychron` has some special unknown code executed (some special commands I think we don't need))
+
+use this to compile the keyboard
+qmk compile -kb keychron/q6/ansi_encoder -km via
+
+
+use this to compile AND FLASH the keyboard (ATTENTION: FLASHING MAY CAUSE IT TO BECOME UNUSABLE IF
+SOMETHING GOES WRONG DURING THE PROCESS)
+qmk flash -kb keychron/q6/ansi_encoder -km via
+
+to flush the keyboard you need to press the reset button under the space key, disconnect the keyboard
+and then reconnect it while the flush command is running
